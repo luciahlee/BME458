@@ -1,3 +1,4 @@
+// main.c File
 // Import required libraries
 #include <ArducamSSD1306.h>    // Modification of Adafruit_SSD1306 for ESP8266 compatibility
 #include <Adafruit_GFX.h>   // Needs a little change in original Adafruit library (See README.txt file)
@@ -10,9 +11,9 @@ A5   SCL
 */
 
 //Declaration of pin values
-#define LED1Pin    3
-#define LED2Pin    5
-#define LED3Pin    9
+#define LED_flexSensor    3
+#define LED_FSR   5
+#define LED_EMG    9
 int flexSensor = A0;
 int FSR = A2;
 int EMG = A4;
@@ -35,9 +36,9 @@ int emg_pwm;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  pinMode(LED1Pin, OUTPUT);
-  pinMode(LED2Pin, OUTPUT);
-  pinMode(LED3Pin, OUTPUT);
+  pinMode(LED_flexSensor, OUTPUT);
+  pinMode(LED_FSR, OUTPUT);
+  pinMode(LED_EMG, OUTPUT);
   Serial.println("Flex Sensor FSR EMG");
 
   //Can write code here to configure threshold values 
@@ -60,17 +61,17 @@ void loop() {
 //Code for Flex Sensor
 grip_strength = analogRead(flexSensor);
 // grip_strength_pwm = map(grip_strength, )
-grip_strength > 660 ? analogWrite(LED1Pin, 255) : analogWrite(LED1Pin, 0);
+grip_strength > 660 ? analogWrite(LED_flexSensor, 255) : analogWrite(LED_flexSensor, 0);
 
 //Code for FSR
 fsr = analogRead(FSR);
 // grip_strength_pwm = map(grip_strength, )
-fsr < 500 ? analogWrite(LED2Pin, 255) : analogWrite(LED2Pin, 0);
+fsr < 500 ? analogWrite(LED_FSR, 255) : analogWrite(LED_FSR, 0);
 
 //Code for EMG
 emg = analogRead(EMG);
 // grip_strength_pwm = map(grip_strength, )
-emg < 500 ? analogWrite(LED3Pin, 255) : analogWrite(LED3Pin, 0);
+emg < 500 ? analogWrite(LED_EMG, 255) : analogWrite(LED_EMG, 0);
 
 //Print Output on one line
 //Source: https://forum.arduino.cc/t/print-multiple-variables-amount-in-one-line/604071/6
