@@ -18,7 +18,10 @@
 #define EMG_COM_POOR   10
 #define EMG_COM_EXCL   11
 
+// int Led_pins = [FLEX_COM_POOR, FLEX_COM_AVG, FLEX_COM_EXCL, FSR_COM_POOR, FSR_COM_AVG, FSR_COM_EXCL, EMG_COM_POOR, EMG_COM_EXCL];
+
 //Thresholds 
+#define FLEX_BASE       640 //baseline value
 #define FLEX_POOR       650 //less than 650
 #define FLEX_AVERAGE    659 //650 - 659
 #define FLEX_EXCELLENT  660 //Above 660
@@ -30,26 +33,30 @@ int EMG = A4;
 //Variables (volatile variables can change)
 unsigned long time; 
 
-volatile int grip_strength;
-int grip_strength_pwm; //use for mapping
-int flex_threshold = 660;
+volatile int flex;
+int flex_pwm; //use for mapping
+// byte flex_code = 0b0000;
+int flex_code = 0;
+
 
 volatile int fsr;
 int fsr_pwm;
 int FSR_threshold = 400;
+byte fsr_code = 0b0000;
 
 volatile int emg;
 int emg_pwm;
 int EMG_threshold = 500;
+byte emg_code = 0b0000;
 
 //functions
-int read_flexSensor(int threshold);
+int read_flexSensor();
 int read_FSR(int threshold);
 int read_EMG(int threshold);
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(LED_flexSensor, OUTPUT);
   pinMode(LED_FSR, OUTPUT);
   pinMode(LED_EMG, OUTPUT);
@@ -60,24 +67,37 @@ void setup() {
 }
 
 void loop() {
-digitalWrite(FLEX_COM_AVG, HIGH);
-digitalWrite(FSR_COM_POOR, HIGH);
-digitalWrite(EMG_COM_EXCL, HIGH);
-time = millis();
-grip_strength = read_flexSensor(flex_threshold);
-fsr = read_FSR(FSR_threshold);
-emg = read_EMG(EMG_threshold);
+  digitalWrite(FLEX_COM_AVG, HIGH);
+  digitalWrite(FSR_COM_POOR, HIGH);
+  digitalWrite(EMG_COM_EXCL, HIGH);
+  time = millis();
+  flex = read_flexSensor();
+  fsr = read_FSR(FSR_threshold);
+  emg = read_EMG(EMG_threshold);
 
-//Print Output on one line
-String p1= " ";
-Serial.println(time + p1 + grip_strength + p1 + fsr + p1 + emg);
+  //Print Output on one line
+  String p1= " ";
+  Serial.println(time + p1 + flex + p1 + fsr + p1 + emg);
+  Serial.println(flex_code + p1 + fsr_code + p1 + emg_code);
+  delay(1000);
 }
 
-int read_flexSensor(int threshold){
+int read_flexSensor(){
+  // byte A = 0b0000, B = 0b0000, C = 0b0000;
+  int a = 0;
   int val = analogRead(flexSensor);
-  // grip_strength_pwm = map(grip_strength, )
-  val > threshold ? analogWrite(LED_flexSensor, 255) : analogWrite(LED_flexSensor, 0);
-  val < FLEX_POOR ? digitalWrite(FLEX_COM_POOR, HIGH) : digitalWrite(FLEX_COM_POOR, LOW);
+  // flex_pwm = map(flex, )
+  val > FLEX_EXCELLENT ? analogWrite(LED_flexSensor, 255) : analogWrite(LED_flexSensor, 0);
+  if (val > FLEX_EXCELLENT){
+    a = 1 << 3;
+  }
+  if (val >= FLEX_POOR && val <= FLEX_AVERAGE){
+    a = 1 << 2;
+  }
+  if (val >= FLEX_BASE && val < FLEX_POOR){
+    a = 1 << 1;
+  }
+  flex_code = a;
   return val;
 }
 
