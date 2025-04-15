@@ -1,4 +1,4 @@
-# BME458
+# AMIO
 ALS symptom detection and hand muscle trainer for BME 458 Final Design Project 
 
 AMIO_Sensor - reads the sensor data
