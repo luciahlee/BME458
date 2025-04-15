@@ -16,9 +16,9 @@ A5   SCL
 #define LOGO16_GLCD_HEIGHT 16
 #define LOGO16_GLCD_WIDTH  16
 
-#define FLEX_COM_POOR  1
-#define FLEX_COM_AVG   2
-#define FLEX_COM_EXCL  4
+#define FLEX_COM_POOR  A0
+#define FLEX_COM_AVG   A1
+#define FLEX_COM_EXCL  A2
 #define FSR_COM_POOR   6
 #define FSR_COM_AVG    7
 #define FSR_COM_EXCL   8
@@ -38,6 +38,9 @@ int performance_calc(int line1, int line2, int line3);
 int performance_calc(int line1, int line2);
 void print_perf(int value);
 
+int EMG_perf;
+int flex_perf;
+int FSR_perf;
 
 void setup(void)
 {
@@ -50,13 +53,25 @@ void setup(void)
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
+
+  pinMode(FLEX_COM_POOR,INPUT);
+  pinMode(FLEX_COM_AVG,INPUT);
+  pinMode(FLEX_COM_EXCL,INPUT);
+  pinMode(FSR_COM_POOR,INPUT);
+  pinMode(FSR_COM_AVG,INPUT);
+  pinMode(FSR_COM_EXCL,INPUT);
+  pinMode(EMG_COM_POOR,INPUT);
+  pinMode(EMG_COM_EXCL,INPUT);
 }
 
 
 void loop() {
-  int EMG_perf = performance_calc(EMG_COM_EXCL, EMG_COM_POOR);
-  int flex_perf = performance_calc(FLEX_COM_EXCL, FLEX_COM_AVG, FLEX_COM_POOR);
-  int FSR_perf = performance_calc(FSR_COM_EXCL, FSR_COM_AVG, FSR_COM_POOR);
+  // int EMG_perf = performance_calc(EMG_COM_EXCL, EMG_COM_POOR);
+  // int flex_perf = performance_calc(FLEX_COM_EXCL, FLEX_COM_AVG, FLEX_COM_POOR);
+  // int FSR_perf = performance_calc(FSR_COM_EXCL, FSR_COM_AVG, FSR_COM_POOR);
+  EMG_perf = performance_calc(EMG_COM_EXCL, EMG_COM_POOR);
+  flex_perf = performance_calc(FLEX_COM_EXCL, FLEX_COM_AVG, FLEX_COM_POOR);
+  FSR_perf = performance_calc(FSR_COM_EXCL, FSR_COM_AVG, FSR_COM_POOR);
 
   int flex_low = digitalRead(FLEX_COM_POOR);
   int flex_avg = digitalRead(FLEX_COM_AVG);
@@ -88,9 +103,7 @@ void results_display(int val0, int val1, int val2, int val3){
   display.println("AMIO Diagnosis Result");
   display.setCursor(10,8);
   display.print("ALS: ");
-  //Create a function
-  //Unlikely, Inconclusive, Likely
-  display.println("Unlikely");
+  Diagnosis(flex_perf, EMG_perf, FSR_perf);
   display.setCursor(0,30);
   display.print("EMG: ");
   print_perf(val1);
@@ -99,15 +112,8 @@ void results_display(int val0, int val1, int val2, int val3){
   print_perf(val2);
   display.setCursor(0,50);
   display.print("FSR: ");
-    print_perf(val3);
+  print_perf(val3);
   display.display();
-}
-
-//To be implemented by Isabel
-void Diagnosis(int flex, int emg, int FSR){
-  display.println("Likely");
-  display.println("Inconclusive");
-  display.println("Unlikely");
 }
 
 //line1 = digital line read for Excellent 
@@ -145,6 +151,7 @@ int performance_calc(int line1, int line2){
 
 //print performance
 void print_perf(int value){
+  //Serial.println(value);
   if (value == POOR){
     display.println("Poor");
   }
@@ -153,5 +160,65 @@ void print_perf(int value){
   }
   if (value == EXCELLENT){
     display.println("Excellent");
+  }
+}
+
+void Diagnosis(int flex, int emg, int fsr){
+  // if(flex == FLEX_COM_EXCL && fsr == FSR_COM_EXCL && emg == EMG_COM_EXCL){
+  //   display.println("Unikely");
+  // }
+  if(flex == EXCELLENT && fsr == EXCELLENT && emg == EXCELLENT){
+    display.println("Unlikely");
+  }
+  else if(emg==EXCELLENT && flex==EXCELLENT && fsr==AVERAGE){
+    display.println("Unlikely");
+  }
+  else if(emg==EXCELLENT && flex==AVERAGE && fsr==EXCELLENT){
+    display.println("Unikely");
+  }
+  else if(emg==POOR && flex==AVERAGE && fsr==AVERAGE){
+    display.println("Inconclusive");
+  }
+  else if (emg==EXCELLENT && flex==AVERAGE && fsr==AVERAGE){
+    display.println("Inconclusive");
+  }
+  else if(emg==EXCELLENT && flex==POOR && fsr==POOR){
+    display.println("Inconclusive");
+  }
+  else if(emg==EXCELLENT && flex==POOR && fsr==AVERAGE){
+    display.println("Inconclusive");
+  }
+  else if(emg==EXCELLENT && flex==AVERAGE && fsr==POOR){
+    display.println("Inconclusive");
+  }
+  else if(emg==EXCELLENT && flex==POOR && fsr==EXCELLENT){
+    display.println("Inconclusive");
+  }
+  else if(emg==EXCELLENT && flex==EXCELLENT && fsr==POOR){
+    display.println("Inconclusive");
+  }
+  else if(emg==POOR && flex==EXCELLENT && fsr==EXCELLENT){
+    display.println("Inconclusive");
+  }
+  else if(emg==POOR && flex==EXCELLENT && fsr==AVERAGE){
+    display.println("Inconclusive");
+  }
+  else if(emg==POOR && flex==AVERAGE && fsr==EXCELLENT){
+    display.println("Inconclusive");
+  }
+  else if(emg==POOR && flex==POOR && fsr==EXCELLENT){
+    display.println("Inconclusive");
+  }
+  else if(emg==POOR && flex==EXCELLENT && fsr==POOR){
+    display.println("Inconclusive");
+  }
+  else if (emg==POOR && flex==POOR && fsr==POOR){
+    display.println("Likely");
+  }
+  else if (emg==POOR && flex==POOR && fsr==AVERAGE){
+      display.println("Likely");
+  }
+  else if (emg==POOR && flex==AVERAGE && fsr==POOR){
+    display.println("Likely");
   }
 }

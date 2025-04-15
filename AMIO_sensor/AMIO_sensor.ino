@@ -3,19 +3,21 @@
 #include <ArducamSSD1306.h>    // Modification of Adafruit_SSD1306 for ESP8266 compatibility
 #include <Adafruit_GFX.h>   // Needs a little change in original Adafruit library (See README.txt file)
 #include <Wire.h>           // For I2C comm, but needed for not getting compile error
+#include <Bounce2.h>        //To debounce the button and reset states 
 
 //Declaration of pin values
 #define LED_flexSensor    3
 #define LED_FSR           5
-#define LED_EMG           9
+#define LED_EMG           12
 
 //Digital pin writes to the Arduino Uno
-#define FLEX_COM_POOR  1
+#define FLEX_COM_POOR  A5
 #define FLEX_COM_AVG   2
 #define FLEX_COM_EXCL  4
 #define FSR_COM_POOR   6
 #define FSR_COM_AVG    7
 #define FSR_COM_EXCL   8
+#define BUTTON_PIN     9 
 #define EMG_COM_POOR   10
 #define EMG_COM_EXCL   11
 
@@ -36,7 +38,6 @@ int FSR_thresholds[3] = {500, 459, 400};
 #define FSR_EXCELLENT   400
 
 //These threshold values need to be changed 
-#define EMG_POOR        500
 #define EMG_EXCELLENT   400
 
 //Sensor Inputs 
@@ -49,34 +50,18 @@ unsigned long time;
 volatile int flex;
 byte flex_code = 0;
 volatile int fsr;
-int fsr_code = 0;
+byte fsr_code = 0;
 volatile int emg;
 int EMG_threshold = 500;
-int emg_code = 0;
+byte emg_code = 0;
+
+Bounce2::Button button = Bounce2::Button(); // INSTANTIATE A Bounce2::Button OBJECT
+bool ledState = LOW;
 
 //functions
 int read_flexSensor();
 int read_FSR(int threshold);
 int read_EMG(int threshold);
-void button_interrupt_handler();
-bool read_button();
-
-//Definitions for Buttons
-#define LED                         LED_BUILTIN  // digital pin connected to LED, for testing of switch code only
-bool    led_status  =                        LOW; // start with LED off, for testing of switch code  only
-
-int     button_switch =                       9; // external interrupt  pin
-
-#define switched                            true // value if the button  switch has been pressed
-#define triggered                           true // controls  interrupt handler
-#define interrupt_trigger_type            RISING // interrupt  triggered on a RISING input
-#define debounce                              10  // time to wait in milli secs
-
-volatile  bool interrupt_process_status = {
-  !triggered                                     // start with no switch press pending,  ie false (!triggered)
-};
-bool initialisation_complete =            false;  // inhibit any interrupts until initialisation is complete
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -84,16 +69,20 @@ void setup() {
   pinMode(LED_flexSensor, OUTPUT);
   pinMode(LED_FSR, OUTPUT);
   pinMode(LED_EMG, OUTPUT);
+  // digitalWrite(LED_EMG, ledState);
   pinMode(FLEX_COM_POOR, OUTPUT);
+  pinMode(FLEX_COM_AVG, OUTPUT);
+  pinMode(FLEX_COM_EXCL, OUTPUT);
+  pinMode(FSR_COM_POOR, OUTPUT);
+  pinMode(FSR_COM_AVG, OUTPUT);
+  pinMode(FSR_COM_EXCL, OUTPUT);
+  pinMode(EMG_COM_POOR, OUTPUT);
+  pinMode(EMG_COM_EXCL, OUTPUT);
   Serial.println("Time FlexSensor FSR EMG");
 
-  //Code for Button
-  pinMode(LED, OUTPUT);
-  pinMode(button_switch, INPUT);
-  attachInterrupt(digitalPinToInterrupt(button_switch),
-                  button_interrupt_handler,
-                  interrupt_trigger_type);
-  initialisation_complete = true; // open interrupt processing for business
+  button.attach ( BUTTON_PIN , INPUT );
+  button.interval( 25 );
+  button.setPressedState( LOW ); 
 }
 
 void loop() {
@@ -102,8 +91,20 @@ void loop() {
   time = millis();
   flex = read_flexSensor();
   fsr = read_FSR();
-  emg = read_EMG(EMG_threshold);
+  emg = read_EMG();
 
+  //Button Bounce
+  button.update();
+  if ( button.pressed() ) {
+    // TOGGLE THE LED STATE : 
+    ledState = !ledState; // SET ledState TO THE OPPOSITE OF ledState
+    digitalWrite(LED_FSR, ledState);
+    flex_code = 0;
+    fsr_code = 0;
+    emg_code = 0;
+  
+  }
+  
   //Send the signal output to Uno
   digital_output();
 
@@ -112,16 +113,6 @@ void loop() {
   Serial.println(time + p1 + flex + p1 + fsr + p1 + emg);
   Serial.println(flex_code + p1 + fsr_code + p1 + emg_code);
   delay(100);
-
-  // test buton switch and process  if pressed
-  if (read_button() == switched) {
-    // button on/off cycle now  complete, so flip LED between HIGH and LOW
-    led_status = HIGH - led_status;  // toggle state
-    digitalWrite(LED, led_status);
-  } else {
-    // do  other things....
-
-  }
 }
 
 //ToDo:
@@ -133,11 +124,11 @@ int read_flexSensor(){
   int val = analogRead(flexSensor);
   val > FLEX_EXCELLENT ? analogWrite(LED_flexSensor, 255) : analogWrite(LED_flexSensor, 0);
   if (val > FLEX_EXCELLENT)
-    flex_code = flex_code | 0100;
+    flex_code = flex_code | 8;
   if (val >= FLEX_POOR && val <= FLEX_AVERAGE)
-    flex_code = flex_code | 0010;
+    flex_code = flex_code | 2;
   if (val < FLEX_POOR)
-    flex_code = flex_code | 0001;
+    flex_code = flex_code | 1;
   return val;
 }
 
@@ -145,71 +136,73 @@ int read_FSR(){
   int val = analogRead(FSR);
   val < FSR_EXCELLENT ? analogWrite(LED_FSR, 255) : analogWrite(LED_FSR, 0);
   if (val <= FSR_EXCELLENT)
-    fsr_code = fsr_code | 0100;
+    fsr_code = fsr_code | 8;
   if (val >= FSR_AVERAGE && val <= FSR_POOR)
-    fsr_code = fsr_code | 0010;
+    fsr_code = fsr_code | 2;
   if (val > FSR_POOR)
-    fsr_code = fsr_code | 0001;
+    fsr_code = fsr_code | 1;
   return val;
 }
 
-//Still need to implement 
-int read_EMG(int threshold){
+int read_EMG(){
   int val = analogRead(EMG);
-  val < threshold ? analogWrite(LED_EMG, 255) : analogWrite(LED_EMG, 0);
+  val < EMG_EXCELLENT ? analogWrite(LED_EMG, 255) : analogWrite(LED_EMG, 0);
+  if (val >= EMG_EXCELLENT)
+    emg_code = emg_code | 8;
+  if (val < EMG_EXCELLENT)
+    emg_code = emg_code | 1;
   return val;
 }
 
 //Input the code values 
 int digital_output(){
-  if(flex_code == 73){
+  if(flex_code == 11){
     digitalWrite(FLEX_COM_EXCL, HIGH);
+    digitalWrite(FLEX_COM_AVG, LOW);
+    digitalWrite(FLEX_COM_POOR, LOW);
     Serial.println("Flex Excellent");
   }
-  if(flex_code == 9){
+  if(flex_code == 3){
+    digitalWrite(FLEX_COM_EXCL, LOW);
     digitalWrite(FLEX_COM_AVG, HIGH);
+    digitalWrite(FLEX_COM_POOR, LOW);
     Serial.println("Flex Average");
   }
   if(flex_code == 1){
+    digitalWrite(FLEX_COM_EXCL, LOW);
+    digitalWrite(FLEX_COM_AVG, LOW);
     digitalWrite(FLEX_COM_POOR, HIGH);
     Serial.println("Flex Poor");
   }
-  if(fsr_code == 73){
+  if(fsr_code == 11){
     digitalWrite(FSR_COM_EXCL, HIGH);
+    digitalWrite(FSR_COM_AVG, LOW);
+    digitalWrite(FSR_COM_POOR, LOW);
     Serial.println("FSR Excellent");
   }
-  if(fsr_code == 9){
+  if(fsr_code == 3){
+    digitalWrite(FSR_COM_EXCL, LOW);
     digitalWrite(FSR_COM_AVG, HIGH);
+    digitalWrite(FSR_COM_POOR, LOW);
     Serial.println("FSR Average");
   }
   if(fsr_code == 1){
+    digitalWrite(FSR_COM_EXCL, LOW);
+    digitalWrite(FSR_COM_AVG, LOW);
     digitalWrite(FSR_COM_POOR, HIGH);
     Serial.println("FSR Poor");
   }
-  if(emg_code == 73){
-    digitalWrite(FSR_COM_AVG, HIGH);
+  if(emg_code == 9){
+    digitalWrite(EMG_COM_EXCL, HIGH);
+    digitalWrite(EMG_COM_POOR, LOW);
     Serial.println("EMG Excellent");
   }
   if(emg_code == 1){
-    digitalWrite(FSR_COM_POOR, HIGH);
+    digitalWrite(EMG_COM_EXCL, LOW);
+    digitalWrite(EMG_COM_POOR, HIGH);
     Serial.println("EMG Poor");
   }
   return 1;
-}
-
-
-int preivous_code(){
-  int a = 0;
-  int val = analogRead(flexSensor);
-  val > FLEX_EXCELLENT ? analogWrite(LED_flexSensor, 255) : analogWrite(LED_flexSensor, 0);
-  if (val > FLEX_EXCELLENT)
-    a = 1 << 3;
-  if (val >= FLEX_POOR && val <= FLEX_AVERAGE)
-    a = 1 << 2;
-  if (val < FLEX_POOR)
-    a = 1 << 1;
-  flex_code = a;
-  return val;
 }
 
 //Communicate data with PuTTY
@@ -217,79 +210,11 @@ int preivous_code(){
 
 //Button with interrupt to reset data
 //Source: https://projecthub.arduino.cc/ronbentley1/button-switch-using-an-external-interrupt-16d57f
-
-// The sketch is designed  such that button status is only flagged as 'switched' AFTER
-// 1. button is pressed  AND then released, AND
-// 2. elapse of the debounce period AFTER release
-//
-//  Note that the associated button interrupt handler function and the button_read()
-//  function work together - the interrupt handler starts the on/off process and the
-//  button_read() function completes/concludes it.  The interrupt handler can only restart  AFTER
-// button reading and debounce is complete.  This ensures that only one  interrupt trigger is
-// processed at a time.
-//
-// The button switch is  wired in a standard configuration with a 10K ohm pull down resister which
-//  ensures the digital interrupt pin is kept LOW until the button switch is pressed  and
-// raises it to HIGH (+5v).
-//
-// Operation of the button is demonstrated  by toggling the in built LED on and off.
-//
-
-
-//
-// ISR for  handling interrupt triggers arising from associated button switch
-//
-void  button_interrupt_handler()
-{
-  if (initialisation_complete == true)
-  {  //  all variables are initialised so we are okay to continue to process this interrupt
-    if (interrupt_process_status == !triggered) {
-      // new interrupt so okay  start a new button read process -
-      // now need to wait for button release  plus debounce period to elapse
-      // this will be done in the button_read  function
-      if (digitalRead(button_switch) == HIGH) {
-        // button  pressed, so we can start the read on/off + debounce cycle wich will
-        //  be completed by the button_read() function.
-        interrupt_process_status  = triggered;  // keep this ISR 'quiet' until button read fully completed
-      }
-    }
-  }
-} // end of button_interrupt_handler
-
-bool read_button() {
-  int button_reading;
-  // static variables because we need to retain old values  between function calls
-  static bool     switching_pending = false;
-  static  long int elapse_timer;
-  if (interrupt_process_status == triggered) {
-    //  interrupt has been raised on this button so now need to complete
-    // the button  read process, ie wait until it has been released
-    // and debounce time elapsed
-    button_reading = digitalRead(button_switch);
-    if (button_reading == HIGH)  {
-      // switch is pressed, so start/restart wait for button relealse, plus  end of debounce process
-      switching_pending = true;
-      elapse_timer  = millis(); // start elapse timing for debounce checking
-    }
-    if (switching_pending  && button_reading == LOW) {
-      // switch was pressed, now released, so check  if debounce time elapsed
-      if (millis() - elapse_timer >= debounce) {
-        // dounce time elapsed, so switch press cycle complete
-        switching_pending  = false;             // reset for next button press interrupt cycle
-        interrupt_process_status  = !triggered; // reopen ISR for business now button on/off/debounce cycle complete
-        return switched;                       // advise that switch has been pressed
-      }
-    }
-  }
-  return !switched; // either no press request or debounce  period not elapsed
-} // end of read_button function
-
-
+//Debounce - https://github.com/thomasfredericks/Bounce2
 
 //Todo: Create buttons for different screens
 //Todo: Training for User with Dynamometer
 //Todo: Logic for outputting different digital read values from sensor script
 //Todo: Calculating ALS likelihood from oled script
 //Todo: Organize notebook and document
-
 //Todo: implement general function to read sensor 
