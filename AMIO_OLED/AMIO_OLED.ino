@@ -58,6 +58,12 @@ void loop() {
   int flex_perf = performance_calc(FLEX_COM_EXCL, FLEX_COM_AVG, FLEX_COM_POOR);
   int FSR_perf = performance_calc(FSR_COM_EXCL, FSR_COM_AVG, FSR_COM_POOR);
 
+  int flex_low = digitalRead(FLEX_COM_POOR);
+  int flex_avg = digitalRead(FLEX_COM_AVG);
+  int flex_excl = digitalRead(FLEX_COM_EXCL);
+  Serial.println(flex_low);
+  Serial.println(flex_avg);
+  Serial.println(flex_excl);
   results_display(0, EMG_perf, flex_perf, FSR_perf);
 
   delay(1000);
@@ -69,7 +75,7 @@ void initial_display(){
   display.setCursor(5,20);
   display.println("BME 458 Device: AMIO");
   display.setCursor(5,30);
-  display.println("Click Here to Start");
+  display.println("Click Button to Start");
   display.display();
 }
 
@@ -82,8 +88,9 @@ void results_display(int val0, int val1, int val2, int val3){
   display.println("AMIO Diagnosis Result");
   display.setCursor(10,8);
   display.print("ALS: ");
-  display.println("Unlikely");
+  //Create a function
   //Unlikely, Inconclusive, Likely
+  display.println("Unlikely");
   display.setCursor(0,30);
   display.print("EMG: ");
   print_perf(val1);
