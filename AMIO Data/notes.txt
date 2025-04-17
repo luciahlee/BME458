@@ -1,0 +1,50 @@
+Unlikely
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_101440.txt
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_101634.txt
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_101831.txt
+
+Inconclusive
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_102027.txt
+Flex: Average
+FSR: Poor
+EMG: Excellent
+BAD
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_102212.txt
+Flex: Average
+FSR: Average
+EMG: Excellent
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_102356.txt
+Flex: Average
+FSR: Average
+EMG: Poor
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_103401.txt
+Flex: Average
+FSR: Poor
+EMG: Excellent
+
+Conclusive 
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_102548.txt
+Flex: Poor
+FSR: Poor
+EMG: POor
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_102844.txt
+Flex: Average
+FSR: Poor 
+EMG: Poor
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_103003.txt
+Flex: Average
+FSR: Poor
+EMG: Poor
+BAD
+
+C:\Users\lhlee\OneDrive\Documents\Arduino\BME458_Final_Project\AMIO Data\AMIO_2025_04_17_103624.txt
+Flex: Poor 
+FSR: Poor 
+EMG: Poor

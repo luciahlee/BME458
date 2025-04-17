@@ -17,7 +17,7 @@
 #define FSR_COM_POOR   6
 #define FSR_COM_AVG    7
 #define FSR_COM_EXCL   8
-#define BUTTON_PIN     9 
+#define BUTTON_PIN     13
 #define EMG_COM_POOR   10
 #define EMG_COM_EXCL   11
 
@@ -81,7 +81,7 @@ void setup() {
   Serial.println("Time FlexSensor FSR EMG");
 
   button.attach ( BUTTON_PIN , INPUT );
-  button.interval( 25 );
+  button.interval( 5 );
   button.setPressedState( LOW ); 
 }
 
@@ -99,9 +99,9 @@ void loop() {
     // TOGGLE THE LED STATE : 
     ledState = !ledState; // SET ledState TO THE OPPOSITE OF ledState
     digitalWrite(LED_FSR, ledState);
-    flex_code = 0;
-    fsr_code = 0;
-    emg_code = 0;
+    // flex_code = 0;
+    // fsr_code = 0;
+    // emg_code = 0;
   
   }
   
@@ -111,7 +111,7 @@ void loop() {
   //Print Output on one line
   String p1= " ";
   Serial.println(time + p1 + flex + p1 + fsr + p1 + emg);
-  Serial.println(flex_code + p1 + fsr_code + p1 + emg_code);
+  // Serial.println(flex_code + p1 + fsr_code + p1 + emg_code);
   delay(100);
 }
 
@@ -146,11 +146,15 @@ int read_FSR(){
 
 int read_EMG(){
   int val = analogRead(EMG);
-  val < EMG_EXCELLENT ? analogWrite(LED_EMG, 255) : analogWrite(LED_EMG, 0);
-  if (val >= EMG_EXCELLENT)
+  //val < EMG_EXCELLENT ? analogWrite(LED_EMG, 255) : analogWrite(LED_EMG, 0);
+  if (val >= EMG_EXCELLENT){
     emg_code = emg_code | 8;
-  if (val < EMG_EXCELLENT)
+    analogWrite(LED_EMG, 0);
+  }
+  if (val < EMG_EXCELLENT){
     emg_code = emg_code | 1;
+    analogWrite(LED_EMG, 255);
+  }
   return val;
 }
 
@@ -160,47 +164,47 @@ int digital_output(){
     digitalWrite(FLEX_COM_EXCL, HIGH);
     digitalWrite(FLEX_COM_AVG, LOW);
     digitalWrite(FLEX_COM_POOR, LOW);
-    Serial.println("Flex Excellent");
+    // Serial.println("Flex Excellent");
   }
   if(flex_code == 3){
     digitalWrite(FLEX_COM_EXCL, LOW);
     digitalWrite(FLEX_COM_AVG, HIGH);
     digitalWrite(FLEX_COM_POOR, LOW);
-    Serial.println("Flex Average");
+    // Serial.println("Flex Average");
   }
   if(flex_code == 1){
     digitalWrite(FLEX_COM_EXCL, LOW);
     digitalWrite(FLEX_COM_AVG, LOW);
     digitalWrite(FLEX_COM_POOR, HIGH);
-    Serial.println("Flex Poor");
+    // Serial.println("Flex Poor");
   }
   if(fsr_code == 11){
     digitalWrite(FSR_COM_EXCL, HIGH);
     digitalWrite(FSR_COM_AVG, LOW);
     digitalWrite(FSR_COM_POOR, LOW);
-    Serial.println("FSR Excellent");
+    // Serial.println("FSR Excellent");
   }
   if(fsr_code == 3){
     digitalWrite(FSR_COM_EXCL, LOW);
     digitalWrite(FSR_COM_AVG, HIGH);
     digitalWrite(FSR_COM_POOR, LOW);
-    Serial.println("FSR Average");
+    // Serial.println("FSR Average");
   }
   if(fsr_code == 1){
     digitalWrite(FSR_COM_EXCL, LOW);
     digitalWrite(FSR_COM_AVG, LOW);
     digitalWrite(FSR_COM_POOR, HIGH);
-    Serial.println("FSR Poor");
+    // Serial.println("FSR Poor");
   }
   if(emg_code == 9){
     digitalWrite(EMG_COM_EXCL, HIGH);
     digitalWrite(EMG_COM_POOR, LOW);
-    Serial.println("EMG Excellent");
+    // Serial.println("EMG Excellent");
   }
   if(emg_code == 1){
     digitalWrite(EMG_COM_EXCL, LOW);
     digitalWrite(EMG_COM_POOR, HIGH);
-    Serial.println("EMG Poor");
+    // Serial.println("EMG Poor");
   }
   return 1;
 }

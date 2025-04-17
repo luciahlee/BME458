@@ -4,6 +4,7 @@ import numpy as np
 
 print("Hello World")
 
+# Time FlexSensor FSR EMG
 # test = np.loadtxt('lab10_data_trial_141.txt')
 # print(test.shape())
 Matrix = []
@@ -17,8 +18,8 @@ val_of_interest_EMG = 3
 #Date frothe PuTTY Log
 year = '2025'
 month = '04'
-day = '10'
-time = '092121'
+day = '17'
+time = '103624'
 
 # Code to parse
 f = open('AMIO_'+ year + '_' + month + '_' + day + '_' + time + '.txt', 'r')

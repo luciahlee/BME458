@@ -1,0 +1,2192 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.04.17 09:40:25 =~=~=~=~=~=~=~=~=~=~=~=
+Flex Poor
+FSR Poor
+EMG Poor
+7783 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+7883 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+7985 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8086 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8187 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8288 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8389 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8491 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8592 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8693 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8794 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8895 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+8996 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9098 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9199 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9299 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9401 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9502 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9604 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9705 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9805 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+9907 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10008 638 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10109 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10211 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10311 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10413 638 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10514 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10615 638 1023 378
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10717 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10817 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+10918 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11020 638 1023 370
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11121 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11223 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11323 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11424 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11526 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11627 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11728 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11830 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+11930 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12032 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12133 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12234 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12336 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12436 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12537 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12639 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12740 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12841 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+12943 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13043 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13145 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13246 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13347 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13449 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13549 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13650 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13752 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13853 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+13955 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14055 637 1023 371
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14156 638 1023 371
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14258 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14359 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14460 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14562 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14662 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14764 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14865 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+14966 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15068 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15169 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15269 638 1023 369
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15371 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15472 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15574 638 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15675 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15775 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15877 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+15978 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16079 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16181 638 1023 378
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16281 637 1023 379
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16382 637 1023 380
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16484 637 1023 378
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16585 638 1023 379
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16687 638 1023 379
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16788 637 1023 380
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16888 637 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+16990 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17091 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17192 637 1023 378
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17294 638 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17394 637 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17496 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17597 637 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17698 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17800 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+17901 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18001 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18103 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18204 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18306 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18407 637 1023 371
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18507 638 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18609 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18710 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18811 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+18913 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19014 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19115 637 1023 370
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19216 637 1023 371
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19317 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19419 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19520 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19620 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19722 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19823 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+19924 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20026 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20126 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20228 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20329 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20430 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20532 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20633 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20733 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20835 638 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+20936 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21038 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21139 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21239 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21341 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21442 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21543 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21645 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21746 637 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21847 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+21948 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22049 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22151 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22252 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22352 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22454 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22555 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22657 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22758 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22859 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+22960 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23061 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23162 637 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23264 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23365 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23465 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23567 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23668 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23770 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23871 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+23971 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24073 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24174 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24275 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24377 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24478 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24579 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24680 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24781 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24883 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+24984 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25084 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25186 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25287 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25389 638 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25490 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25591 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25692 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25793 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25894 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+25996 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26097 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26198 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26299 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26400 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26502 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26603 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26703 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26805 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+26906 637 1023 374
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27008 637 1023 378
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27109 637 1023 380
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27210 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27311 637 1023 368
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27412 637 1023 373
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27513 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27615 637 1023 377
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27716 637 1023 376
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27816 637 1023 372
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+27918 637 1023 362
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28019 637 1023 355
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28121 637 1023 375
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28222 637 1023 351
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28323 637 1023 356
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28424 637 1023 366
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28525 637 1023 350
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28626 637 1023 367
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28728 637 1023 369
+1 1 1
+Flex Poor
+FSR Poor
+EMG Poor
+28829 638 1023 360
+1 1 1
+Flex Poor
+FSR Poor
+EMG Excellent
+28930 637 1023 400
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29031 637 1023 390
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29132 637 1023 378
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29234 637 1023 377
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29335 637 1023 376
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29436 637 1023 379
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29537 637 1023 355
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29638 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29740 637 1023 381
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29841 637 1023 383
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+29942 637 1023 392
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30043 637 1023 371
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30144 637 1023 373
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30245 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30347 637 1023 369
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30448 637 1023 370
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30550 637 1023 379
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30650 637 1023 373
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30751 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30853 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+30954 637 1023 372
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31055 637 1023 372
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31156 637 1023 376
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31257 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31358 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31460 637 1023 376
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31561 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31663 637 1023 379
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31763 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31864 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+31966 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32067 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32168 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32269 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32370 637 1023 370
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32472 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32573 637 1023 376
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32674 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32776 637 1023 376
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32876 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+32977 637 1023 378
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33079 637 1023 372
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33180 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33282 636 1023 373
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33382 637 1023 373
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33483 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33585 637 1023 362
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33686 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33787 637 1023 377
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33889 637 1023 378
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+33989 637 1023 382
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34091 637 1023 378
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34192 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34293 637 1023 370
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34395 637 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34495 636 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34596 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34698 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34799 637 1023 375
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+34900 637 1023 373
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35002 637 1023 376
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35102 637 1023 371
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35204 637 1023 372
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35305 637 1023 370
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35406 637 1023 379
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35508 637 1023 377
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35608 636 1023 378
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35709 636 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35811 636 1023 372
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+35912 636 1023 373
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36014 636 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36115 636 1023 374
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36215 636 1023 380
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36317 636 1023 369
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36418 636 1023 367
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36519 638 1023 370
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36621 637 1023 357
+1 1 9
+Flex Poor
+FSR Poor
+EMG Excellent
+36721 638 1023 367
+1 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+36823 640 1023 375
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+36924 641 1023 362
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37025 642 1023 423
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37127 642 1023 391
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37229 644 1023 329
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37330 646 1023 308
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37432 648 1023 384
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37533 649 1023 395
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37635 650 1023 364
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37737 652 1023 406
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37838 652 1023 376
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+37940 655 1023 318
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38041 655 1023 442
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38142 656 1023 423
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38245 656 1023 364
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38346 655 1023 422
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38448 655 1023 384
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38549 654 1023 365
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38650 654 1023 397
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38752 654 1023 409
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38854 653 1023 338
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+38955 654 1023 375
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39056 659 1023 388
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39157 660 1023 385
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39259 660 1023 385
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39361 658 1023 414
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39461 658 1023 326
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39563 657 1023 383
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39664 658 1023 372
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39766 658 1023 358
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39868 658 1023 397
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+39969 658 1023 374
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40070 657 1023 348
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40171 655 1023 362
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40272 653 1023 367
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40375 652 1023 325
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40476 654 1023 401
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40577 656 1023 416
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40678 656 1023 324
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40779 656 1023 393
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40882 655 1023 373
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+40983 656 1023 388
+3 1 9
+Flex Average
+FSR Poor
+EMG Excellent
+41084 657 1023 367
+3 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41185 663 1023 363
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41286 651 1023 385
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41388 642 1023 398
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41489 642 1023 373
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41590 642 1023 379
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41692 643 1023 382
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41792 643 1023 375
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41893 643 1023 376
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+41995 641 1023 377
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42096 640 1023 372
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42198 640 1023 377
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42299 640 1023 370
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42399 640 1023 371
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42501 640 1023 382
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42602 640 1023 377
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42703 640 1023 366
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42805 640 1023 380
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+42906 640 1023 376
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43006 640 1023 377
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43108 640 1023 373
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43209 640 1023 373
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43311 640 1023 372
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43412 640 1023 377
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43513 640 1023 374
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43614 639 1023 373
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43715 640 1023 374
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43816 640 1023 373
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+43918 640 1023 380
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44019 640 1023 374
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44121 640 1023 371
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44221 640 1023 373
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44322 640 1023 378
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44424 640 1023 375
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44525 640 1023 370
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44626 640 1023 382
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44728 640 1023 365
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44828 640 1023 374
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+44930 640 1023 380
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45031 640 1023 375
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45132 640 1023 371
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45234 640 1023 371
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45335 640 1023 372
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45435 640 1023 382
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45537 640 1023 374
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45638 640 1023 370
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45740 640 1023 368
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45841 639 1023 391
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+45942 640 1019 391
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+46043 640 982 371
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+46144 639 785 399
+11 1 9
+Flex Excellent
+FSR Poor
+EMG Excellent
+46245 639 553 407
+11 1 9
+Flex Excellent
+FSR Average
+EMG Excellent
+46347 640 455 366
+11 3 9
+Flex Excellent
+FSR Average
+EMG Excellent
+46448 639 418 363
+11 3 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+46548 639 399 378
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+46650 640 383 338
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+46751 640 376 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+46853 640 368 374
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+46954 640 365 414
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47055 639 365 363
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47157 639 365 400
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47257 639 362 381
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47358 639 363 388
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47460 639 362 374
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47561 639 367 366
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47663 639 474 381
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47764 639 954 398
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47864 639 1023 363
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+47966 639 1023 388
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48067 639 1023 370
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48168 640 1023 364
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48271 639 1023 372
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48373 639 1023 368
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48474 639 1023 378
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48575 639 1023 381
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48677 639 1023 356
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48780 639 1023 374
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48881 639 1023 377
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+48983 639 1023 378
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49084 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49185 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49288 639 1023 378
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49389 639 1023 379
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49490 639 1023 372
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49593 639 1023 373
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49695 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49796 639 1023 374
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49897 639 1023 370
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+49999 639 1023 375
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50102 639 1023 367
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50203 639 1023 382
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50305 639 1023 374
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50405 639 1023 370
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50507 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50610 639 1023 379
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50711 639 1023 372
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50812 639 1023 372
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+50915 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51017 639 1023 380
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51118 639 1023 380
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51219 639 1023 374
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51320 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51423 639 1023 376
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51525 639 1023 380
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51627 639 1023 383
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51727 639 1023 378
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51829 639 1023 382
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+51932 639 1023 386
+11 11 9
+Flex Excellent
+FSR Excellent
+EMG Excellent
+52033 639 1023 376
+11 11 9
+F
